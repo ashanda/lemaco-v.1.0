@@ -78,7 +78,7 @@
 <div class="content-body" style="min-height: 796px;">
   <div class="container-fluid withdraw-section">
     <a class="btn btn-primary" href="/trans/crypto" role="button">Crypto Wallet</a><br>
-    <a class="btn btn-primary" href="/trans/p2p" role="button">P2P Transfer</a><br>
+   <!-- <a class="btn btn-primary" href="/trans/p2p" role="button">P2P Transfer</a><br> -->
     <a class="btn btn-primary" href="/buy_package" role="button">Buy Package</a><br>
 
   </div>

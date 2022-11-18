@@ -185,7 +185,7 @@ class BuypackageController extends Controller
                     $buy_package->save();
                     
                 }
-                $html = '<!doctype html>
+               /* $html = '<!doctype html>
                 <html>
                 <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -196,7 +196,7 @@ class BuypackageController extends Controller
                         GLOBAL RESETS
                     ------------------------------------- */
                     
-                    /*All the styling goes here*/
+                    /*All the styling goes here
                     
                     img {
                     border: none;
@@ -229,24 +229,24 @@ class BuypackageController extends Controller
             
                     /* -------------------------------------
                         BODY & CONTAINER
-                    ------------------------------------- */
+                    ------------------------------------- 
             
                     .body {
                     background-color: #f6f6f6;
                     width: 100%; 
                     }
             
-                    /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+                    /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something 
                     .container {
                     display: block;
                     margin: 0 auto !important;
-                    /* makes it centered */
+                    /* makes it centered 
                     max-width: 580px;
                     padding: 10px;
                     width: 580px; 
                     }
             
-                    /* This should also be a block element, so that it will fill 100% of the .container */
+                    /* This should also be a block element, so that it will fill 100% of the .container 
                     .content {
                     box-sizing: border-box;
                     display: block;
@@ -257,7 +257,7 @@ class BuypackageController extends Controller
             
                     /* -------------------------------------
                         HEADER, FOOTER, MAIN
-                    ------------------------------------- */
+                    ------------------------------------- 
                     .main {
                     background: #ffffff;
                     border-radius: 3px;
@@ -291,7 +291,7 @@ class BuypackageController extends Controller
             
                     /* -------------------------------------
                         TYPOGRAPHY
-                    ------------------------------------- */
+                    ------------------------------------- 
                     h1,
                     h2,
                     h3,
@@ -334,7 +334,7 @@ class BuypackageController extends Controller
             
                     /* -------------------------------------
                         BUTTONS
-                    ------------------------------------- */
+                    ------------------------------------- 
                     .btn {
                     box-sizing: border-box;
                     width: 100%; }
@@ -376,7 +376,7 @@ class BuypackageController extends Controller
             
                     /* -------------------------------------
                         OTHER STYLES THAT MIGHT BE USEFUL
-                    ------------------------------------- */
+                    ------------------------------------- 
                     .last {
                     margin-bottom: 0; 
                     }
@@ -434,7 +434,7 @@ class BuypackageController extends Controller
             
                     /* -------------------------------------
                         RESPONSIVE AND MOBILE FRIENDLY STYLES
-                    ------------------------------------- */
+                    ------------------------------------- 
                     @media only screen and (max-width: 620px) {
                     table.body h1 {
                         font-size: 28px !important;
@@ -479,7 +479,7 @@ class BuypackageController extends Controller
             
                     /* -------------------------------------
                         PRESERVE THESE STYLES IN THE HEAD
-                    ------------------------------------- */
+                    ------------------------------------- 
                     @media all {
                     .ExternalClass {
                         width: 100%; 
@@ -571,7 +571,7 @@ class BuypackageController extends Controller
                 </table>
                 </body>
             </html>' ;
-            globle_send_mail($html);
+            globle_send_mail($html);*/
             Alert::Alert('Success', 'Package has been buying successfully.')->persistent(true,false);
             return redirect()->route('buy_package.index');    
         

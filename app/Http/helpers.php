@@ -1446,8 +1446,7 @@ function binary_commission_update_query($package,$virtual_parentid,$balance_comm
 
   // buy package secound time function //
 
-  function buy_package_secound_time($user_package_row_id,$package_value,$package_id,$package_cat,$current_user,$package_cat_id){
-
+function buy_package_secound_time($user_package_row_id,$package_value,$package_id,$package_cat,$current_user,$package_cat_id){
     
    
       $parent_id=-1;
@@ -1457,7 +1456,9 @@ function binary_commission_update_query($package,$virtual_parentid,$balance_comm
       $current_row_uid = -1;
   
       $get_system_id = get_system_id($current_user);
-      
+      Log::debug('---------------------------------------------------');
+     
+      Log::debug('Name - ' .$get_system_id->fname.' '. $get_system_id->lname );
   
       while ( $virtual_parentid  != 1){// ID 2 is the top most user in the pyramid.*/ 
         

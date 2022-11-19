@@ -28,6 +28,7 @@
             <th>Package Name</th>
             <th>Package Value($)</th>
             <th>Package Duration(Days)</th>
+            
             <th>Package status</th>
             <th width="280px">Action</th>
             </tr>
@@ -38,6 +39,7 @@
             <td>{{ $package->package_name }}</td>
             <td>{{ $package->package_value }}</td>
             <td>{{ $package->package_duration }}</td>
+           
             @if ($package->package_status==0)
             <td>{{ 'Deactivate' }}</td>
             @else

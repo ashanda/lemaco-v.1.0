@@ -21,11 +21,14 @@ class BuypackageController extends Controller
     public function index()
         {
             $role=Auth::user()->role;
+
             if($role==1){
                 $user_id = Auth::id();
-                $data = DB::table('packages')->get();     
+                $data = DB::table('packages')->get();  
+                   
                 return view('admin.package.index',compact('data'));
             }
+
             if($role==0){
                 $user_id = Auth::id();
                 $data = DB::table('packages')->get();   

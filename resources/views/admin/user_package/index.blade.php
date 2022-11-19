@@ -24,7 +24,7 @@
                             <th>S.No</th>
                             <th>User Name</th>
                             <th>Package Name</th>
-                            
+                            <th>Created at</th>
                             <th>Package status</th>
                             <th width="280px">Action</th>
                             </tr>
@@ -38,6 +38,7 @@
             <td>{{ $i }}</td>
             <td>{{ $package->fname ." ".$package->lname}}</td>
             <td>{{ $package->package_name}}</td>
+            <td>{{ $package->created_at}}</td>
             @if ($package->status==2)
             <td>{{ 'Pending' }}</td>
             @elseif($package->status==1)

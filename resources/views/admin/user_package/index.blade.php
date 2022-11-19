@@ -21,21 +21,19 @@
                 <table id="example2" class="display" style="width:100%">
                     <thead>
                         <tr>
-                            <th>S.No</th>
+                            
                             <th>User Name</th>
                             <th>Package Name</th>
                             <th>Created at</th>
                             <th>Package status</th>
                             <th width="280px">Action</th>
                             </tr>
-                            @php
-                                $i = 1;
-                            @endphp
+                           
                     </thead>
                     <tbody>
                         @foreach ($data as $package)
             <tr>
-            <td>{{ $i }}</td>
+            
             <td>{{ $package->fname ." ".$package->lname}}</td>
             <td>{{ $package->package_name}}</td>
             <td>{{ $package->created_at}}</td>
@@ -82,9 +80,7 @@
             
             
             </tr>
-            @php
-                $i++;
-            @endphp
+           
             @endforeach
                         
                     </tbody>
